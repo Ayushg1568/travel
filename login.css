@@ -1,0 +1,54 @@
+body{
+  background-image: url("ball-shaped-business-close-up-335393.jpg");
+  background-repeat: no-repeat;
+  background-size:2500px 1500px;
+  background-position: left;
+}
+h1{
+  position: absolute;
+  top: 10%;
+  font-size: 120%;
+  color: Darkorange;
+}
+form{
+  text-align:left;
+}
+.box
+{
+   left: 0;
+  width: 400px;
+  margin: 20px;
+  border: 5px solid green;
+  padding: 15px;
+}
+ul{
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #333;
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+
+}
+li{
+  float: left;
+  font-size: 40px;
+  font-size: 22px;
+  font-weight: bold;
+}
+li a{
+  display: block;
+  color: lightgreen;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+li a:hover:not(.active){
+  background-color: lightblue;
+}
+.active{
+  background-color: grey;
+}

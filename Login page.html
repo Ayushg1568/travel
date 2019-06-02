@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Login Page</title>
+<link rel="stylesheet" type="text/css" href="login.css">
+
+</head>
+<body>
+	<h1 class="box">
+		<form name="Login" action="Login page.php"  method="post">
+			Username:<br>
+			<input type="text" name="Name"  autofocus required>
+			<br><br>
+			Email:<br>
+			<input type="email" name="Mail" required>
+			<br><br>
+			Mobile No.:<br>
+			<input type="number" name="Contact" required>
+			<br><br>
+			Password:<br>
+			<input type="password" id="myinput" name="Password" required>
+			<input type="checkbox" onclick="showit()"> Show Password
+			<br><br>
+			Confirm Password:<br>
+			<input type ="Password" name="CnfPassword" id="cnfpass" required onblur="validatepass()">
+			<br><br>
+		<input type="submit"  value="Sign up" onclick="submit" >
+			<br>e
+		</form>
+	</h1>
+		<ul>
+			<li><a href="travel.html">Home</a></li>
+				<li><a class="active" href="Login page.html">Sign Up</a></li>
+				<li><a href="destinations.html">Thrillers</a></li>
+				<li><a href="about.html">About Us</a></li>
+			</ul>
+			<script>
+			function showit() {
+				var x = document.getElementById("myinput");
+				if (x.type === "password")
+				{
+					x.type = "text";
+				}
+				else {
+					x.type = "password";
+				}
+			}
+				function validatepass() {
+					var pass=document.Login.Password.value;
+					var cnfpass=document.Login.CnfPassword.value;
+					if(pass!=cnfpass)
+					{
+						alert("Password do not match");
+						return false;
+					}else {
+						return true;
+					}
+
+				}
+			</script>
+
+
+
+</body>
+</html>
