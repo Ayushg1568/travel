@@ -6,6 +6,24 @@ body
 	background-size: 100%;
 
 }
+
+#input_places{
+	width: 40%;
+    height: 25px;
+	border-radius: 16px;
+	outline: none;
+}
+
+#btn_go{
+	width: 40px;
+    height: 30px;
+    border-radius: 15px;
+    outline: none;
+    background: #5cf742;
+    border: 1px solid #00b105;
+	color: #f37a11;
+	cursor: pointer;
+}
 h2{
 	font-style: italic;
 	font-size: 36px;
